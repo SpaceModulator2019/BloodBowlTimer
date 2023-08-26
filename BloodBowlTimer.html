@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="BloodBowlTimer.css">
+    <title>MSBB Round Timer</title>
+</head>
+<body>
+    <div class="header">
+        <!-- <img class="logo_tournament" src="tournamentlogo.png" /> -->
+        <div>
+            <h1>Mississippi Blood Bowl</h1>
+            <h2>Round Timer</h2>
+        </div>
+        <!-- <img class="logoMSBB" src="MSBB.png" /> -->
+    </div>
+    <div id="container">
+        <!--<p id="hour-label" class="label">H</p><p id="min-label" class="label">M</p><p id="sec-label" class="label">S</p>-->
+        <!-- Second row - input boxes for hours, minutes, and seconds -->
+        <input id="hour" type="number" min="0" max="9" value="2" class="timeh">
+        <p id="p1" class="semicolon">:</p>
+        <input id="minute" type="number" max="60" min="0" value="15" class="time">
+        <p id="p2" class="semicolon">:</p>
+        <input id="sec" type="number" max="60" min="00" value="00" class="time">
+        <!-- Third row - buttons and logo -->
+        <button id="start" class="btn">&#x25b6;</button>
+        <img class="logoMSBB" src="MSBB.png" />
+        <button id="reset" class="btn">&#8634;</button>
+    </div>
+    <script src="BloodBowlTimer.js"></script>
+</body>
+</html>
